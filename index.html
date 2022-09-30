@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Italian Pizza</title>
+    <!-- icon -->
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD///8ABo70ADQoxAAHjvQADJD0AE3L/QA8bNgAGJ33ABSb9wBJtvQATc7/ANz0/wBiatYANzXIAE3M/wD8/v8AMRi+AAuP9AA8bNkAt+n/AHHW/wBNzP0APGXXADpc0gAxFb0AOl/UAE7Q/gBNzf8APGTWAEzE+gANkvQAMRm+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4OAAAAAAAAAAAAAAAAAAAfDgAAAAAAAAAAAAAAAAANHw4UAAAAAAAAAAAAAAAAHwkOHwAAAAAAAAAAAAAAAA4OGR8AAAAAAAAAAAAAABAXDgUfHwAAAAAAAAAAAAAfHxoOHB8AAAAAAAAAAAAMHx8GDg4OEwAAAAAAAAAADh8fDg4OFRIAAAAAAAAAAA4ODg4OFh8fAAAAAAAAAB8dDg4ODh8fHx8AAAAAAAAfDgofHxgOHx8bAAAAAAALDg4QHx8fDg4ODg8AAAADBw4ODh8fAg4ODg4IAwAAAAQEBAQODg4OHgQEBAAAAAAAAAEEBAQEBAQRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300;400&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+      html {
+        font-size: 20px;
+      }
+      .content {
+        display: block;
+        margin: 1rem auto;
+        padding: 1rem 1.5rem;
+        max-width: 45%;
+        text-align: center;
+        background-image: linear-gradient(
+          to right top,
+          rgba(237, 200, 146, 0.6),
+          rgba(242, 215, 161, 0.6),
+          rgba(239, 207, 147, 0.6),
+          rgba(235, 194, 112, 0.6),
+          rgba(242, 215, 161, 0.6)
+        );
+        border-radius: 0.75rem;
+      }
+      body {
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        color: #343232;
+        background-image: linear-gradient(
+            to top right,
+            rgba(255, 170, 0, 0.6),
+            hsla(25, 100%, 50%, 0.6),
+            hsla(5, 100%, 50%, 0.6)
+          ),
+          url(https://www.gannett-cdn.com/presto/2022/01/02/PDTF/223b571e-5713-48f9-b11d-50268ee85801-PEP_UPGRD_PULL_2.jpg?crop=2156,1213,x0,y135&width=2156&height=1213&format=pjpg&auto=webp);
+      }
+      img {
+        max-width: 95%;
+        display: block;
+        margin: 0 auto;
+        padding: 0 0.75rem 1.5rem 0.75rem;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        border-radius: 100%;
+      }
+      header {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 1.7;
+        padding: 0.4rem 0.3rem;
+        border-radius: 0.7rem;
+        background: linear-gradient(
+          to top right,
+          rgba(255, 170, 0, 1),
+          hsla(25, 100%, 50%, 1),
+          hsla(5, 100%, 50%, 1)
+        );
+        /*         background: linear-gradient(to left bottom, #c65e50, #c4301b, #be1818, #bd2619, #d65447);
+      */ /*         background: linear-gradient(to left bottom, #fff200, #ff2a00, #f01a1a, #ff0000, #ff4400, #fff200);
+      */
+      }
+      h2 {
+        font-weight: 400;
+      }
+      hr {
+        display: block;
+        margin: 2.5rem auto;
+        border: 1rem solid #be1818;
+        border-style: none;
+        border-top-style: dotted;
+        width: 18%;
+        border-top-width: 0.5rem;
+      }
+      p {
+        text-align: justify;
+        text-align-last: center;
+        line-height: 1.5;
+        padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+      }
+      span {
+        display: block;
+        text-align: center;
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+      }
+      a {
+        text-decoration: none;
+        color: #000000;
+        padding: 0.5rem 0.5rem;
+        border-radius: 1rem;
+        transition: all 200ms ease-in-out;
+      }
+      a:hover {
+        background: linear-gradient(
+          to top right,
+          rgba(255, 170, 0, 0.4),
+          hsla(25, 100%, 50%, 0.4),
+          hsla(5, 100%, 50%, 0.4)
+        );
+      }
+      button {
+        border: none;
+        border-radius: 2rem;
+        padding: 1rem 1.5rem;
+        margin: 1rem;
+        background: linear-gradient(
+          to top right,
+          rgba(255, 170, 0, 1),
+          hsla(25, 100%, 50%, 1),
+          hsla(5, 100%, 50%, 1)
+        );
+        box-shadow: 2px 2px 10px rgba(186, 178, 160, 0.6);
+        transition: all 300ms ease-in-out;
+      }
+      button:hover {
+        padding: 1.1rem 1.6rem;
+        font-size: 1.1rem;
+        box-shadow: 5px 5px 10px rgba(151, 149, 145, 0.6);
+        font-weight: 700;
+      }
+      footer {
+        padding: 2rem 1rem 1rem 1rem;
+        text-align: center;
+        font-size: 0.7rem;
+        color: rgb(48, 47, 46);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <strong>
+          <h1>I love Pizza</h1>
+          <h2>Especially Italian Pizzas</h2>
+        </strong>
+      </header>
+      <hr />
+      <main>
+        <img src="https://images.deliveryhero.io/image/fd-pk/LH/n4bk-hero.jpg" alt="Italian Pizza" />
+        <p>
+          Pizza is a dish of <em>Italian</em> origin consisting of a usually round, flat base of leavened
+          wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked
+          at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta.
+          <br />
+        </p>
+        <span><a href="https://en.wikipedia.org/wiki/Pizza" target="_blank">Learn more on Wikipedia</a></span>
+        <button>Buy Italian Pizza</button>
+      </main>
+    </div>
+    <footer>
+      This page was built by<a href="https://www.linkedin.com/in/hanie-solaty-nia-1b718b19b/" target="_blank"
+        >Hanie Solaty Nia</a
+      >
+    </footer>
+    <script>
+      'use strict';
+      const btn = document.querySelector('button');
+
+      const checkInventory = function () {
+        let name = prompt('What is your name');
+        let num = Math.floor(Math.random() * 10) + 1;
+        //only if the random num is more than 5 we will deliver pizza
+
+        //this is for the requirement of using `if else statement` but alert function use ternary operator
+        if (num > 5) console.log(`num = ${num}, Still open`);
+        else console.log(`num = ${num}, Closed for today`);
+
+        alert(
+          num > 4
+            ? `Hi ${name}! You'er in luck😉, we still have pizzas today.\nCall 3911 to order🍕🍺`
+            : `Hi ${name}! Sorry we are out of pizza, next time try buying sooner🙂`
+        );
+      };
+
+      btn.addEventListener('click', checkInventory);
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') checkInventory();
+        else console.log(event.key);
+      });
+    </script>
+  </body>
+</html>
